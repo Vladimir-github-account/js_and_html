@@ -1,0 +1,70 @@
+#cardsContainer {
+    margin: 0 auto;
+    max-width: 1200px;
+    background-color: #F98A01;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    box-sizing: border-box;
+    justify-content: space-evenly;
+}
+.userCardWrapper {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    margin: 10px;
+    background-color: white;
+    padding: 10px 15px 5px;
+    text-align: center;
+    max-width: 300px;
+}
+.userImageContainer {
+    position: relative;
+    overflow: hidden;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+.userImage {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    height: inherit;
+    width: inherit;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+}
+
+.userName {
+    font-size: 16px;
+}
+
+.decsription {
+    font-size: 14px;
+    width: calc(100% - 20px*2);
+
+
+    line-height: 20px;
+    white-space: normal;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-box-orient:vertical;
+    -webkit-line-clamp:2;
+    line-clamp:2;
+}
+
+.userCardWrapper > * {
+    margin-top: 15px;
+}
+
+.userContactsContainer {
+    margin: auto;
+}
+
+.userContactsContainer > a + a {
+    margin-left: 10px;
+}
+
+.userContactsContainer > a > img {
+    height: 20px;
+}
